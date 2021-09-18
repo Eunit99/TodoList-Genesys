@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 17px;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 80%;
+	max-width: 600px;
+	max-height: 500px;
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+	transform: translate(50%, 50%);
+	-webkit-transform: translate(50%, 50%);
+	-moz-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	-o-transform: translate(50%, 50%);
+	background-color: rgba(204, 204, 204, 0.486);
+	border: 1px solid #666;
+	border-radius: 2px;
+	padding: 1rem;
+	font-size: 20px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+input,
+button {
+	outline: none;
+	border: none;
+	font-size: 20px;
+	height: 50px;
+	width: 100%;
+}
+
+input.input {
+	padding: 12px 5px;
+	vertical-align: middle;
+}
+
+button.button {
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0);
+	color: rgba(240, 239, 239, 0.863);
+	cursor: pointer;
+	margin-top: 6px;
+}
+
+
+button.button:hover {
+	background-color: rgb(117, 173, 138);
+	color: rgb(12, 12, 12);
+}
+
+.todos-container {
+	margin-top: 25px;
+}
+
+p {
+	cursor: pointer;
+	margin: 0;
+	font-size: 20px;
+}
