@@ -17,7 +17,7 @@ const todo = () => {
 		} else {
 			input.style.border = "1px";
 			input.style.borderStyle = "solid";
-			input.style.borderColor = "#d9534f";
+			input.style.borderColor = "red";
 			console.log(`Input field is empty`);
 		}
 

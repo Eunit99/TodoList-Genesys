@@ -1,15 +1,51 @@
 * {
+	-webkit-user-select: none;
+	/* Chrome, Safari, Android and iOS */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer */
+	user-select: none;
+	/* Disables text selection */
 	margin: 0;
 	padding: 0;
+	/* Remove margins and paddings on elements */
 	box-sizing: border-box;
+	/* Generate paddings inside elements */
 }
 
 html,
 body {
 	width: 100vw;
 	height: 100vh;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 17px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	padding: 1rem;
+	margin: 0;
+	background-color: #06b79a !important;
+	background: -webkit-linear-gradient(180deg, #06b79a 70%, #7c32ff 100%);
+	background: -moz-linear-gradient(180deg, #06b79a 70%, #7c32ff 100%);
+	background: -o-linear-gradient(180deg, #06b79a 70%, #7c32ff 100%);
+	background: -ms-linear-gradient(180deg, #06b79a 70%, #7c32ff 100%);
+	background: linear-gradient(180deg, #06b79a 70%, #7c32ff 100%);
+	/*
+	* For development use only
+	* Uncomment in development
+	*/
+	background-image: url('../img/default-bg.jpg');
+	background-image: url('https://source.unsplash.com/1600x900/?landscape');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 1.225;
+	overflow: hidden;
 }
 
 .app-container {
@@ -27,16 +63,16 @@ body {
 	-moz-transform: translate(50%, 50%);
 	-ms-transform: translate(50%, 50%);
 	-o-transform: translate(50%, 50%);
-	background-color: rgba(204, 204, 204, 0.486);
+	background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.021));
 	border: 1px solid #666;
 	border-radius: 2px;
 	padding: 1rem;
 	font-size: 20px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
 
 input,
@@ -51,6 +87,8 @@ button {
 input.input {
 	padding: 12px 5px;
 	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid #000000;
 }
 
 button.button {
@@ -75,4 +113,5 @@ p {
 	cursor: pointer;
 	margin: 0;
 	font-size: 20px;
+	color: white;
 }
