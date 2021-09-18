@@ -63,7 +63,7 @@ body {
 	-moz-transform: translate(50%, 50%);
 	-ms-transform: translate(50%, 50%);
 	-o-transform: translate(50%, 50%);
-	background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.021));
+	background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.021));
 	border: 1px solid #666;
 	border-radius: 2px;
 	padding: 1rem;
